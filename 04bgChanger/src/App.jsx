@@ -10,7 +10,7 @@ function App() {
     >
       
       <h1 class="text-5xl font-extrabold dark:text-white">Project04 - <small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">BG-ColorChanger</small></h1>
-
+      <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Topic Learned Till Now : useState , hooks , tailwind css , props , react inner working </p>
       <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
         <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
           <button 
