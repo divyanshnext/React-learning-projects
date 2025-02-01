@@ -4,8 +4,8 @@ const StoryGenerator = () => {
   const [prompt, setPrompt] = useState("");
   const [story, setStory] = useState("");
   const [loading, setLoading] = useState(false);
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
-  const API_KEY = "AIzaSyBFip-kCluOtC1JL_57SDHI2UM5TCRPwDs"; // Your actual API key
 
   const generateStory = async () => {
     if (!prompt) return;
@@ -14,7 +14,7 @@ const StoryGenerator = () => {
   
     try {
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
