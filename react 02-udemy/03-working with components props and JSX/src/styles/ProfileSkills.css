@@ -1,0 +1,22 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.skill-block {
+  padding: 7px 18px;
+  border-radius: 20px;
+  color: #22223b;
+  font-weight: 500;
+  font-size: 1rem;
+  background: #e9ecef;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: background 0.2s;
+  margin-bottom: 0;
+  min-width: 0;
+  text-align: center;
+  border: none;
+}
